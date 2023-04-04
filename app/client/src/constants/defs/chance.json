@@ -1,0 +1,1005 @@
+{
+  "!name": "chance",
+  "!define": {
+    "exports.prototype.bool.!0": {
+      "likelihood": "number",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.falsy.!0": {
+      "pool": "[?]",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.floating.!0": {
+      "min": {
+        "!type": "number",
+        "!span": "22620[0:22620]-22623[0:22623]"
+      },
+      "max": {
+        "!type": "number",
+        "!span": "22630[0:22630]-22633[0:22633]"
+      },
+      "fixed": {
+        "!type": "number",
+        "!span": "22640[0:22640]-22645[0:22645]"
+      },
+      "!span": "22619[0:22619]-22654[0:22654]"
+    },
+    "exports.prototype.prime.!0": {
+      "min": "number",
+      "max": "number",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.hex.!0": {
+      "min": "number",
+      "max": "number",
+      "casing": "string",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.buffer.!0": {
+      "length": "number",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.unique.!2": {
+      "comparator": {
+        "!type": "fn(a: [?], e: ?) -> bool",
+        "!span": "35600[0:35600]-35610[0:35610]"
+      },
+      "!span": "35599[0:35599]-35689[0:35689]"
+    },
+    "exports.prototype.unique.!2.comparator.!0": "[?]",
+    "exports.prototype.unique.!ret": "[?]",
+    "exports.prototype.n.!ret": "[?]",
+    "exports.prototype.pick.!0": "[string]",
+    "exports.prototype.pick.!ret": {
+      "name": {
+        "!type": "string",
+        "!span": "14812[0:14812]-14816[0:14816]"
+      },
+      "abbreviation": {
+        "!type": "string",
+        "!span": "14842[0:14842]-14854[0:14854]"
+      },
+      "!span": "14811[0:14811]-14864[0:14864]"
+    },
+    "exports.prototype.pickset.!ret": "[?]",
+    "exports.prototype.shuffle.!ret": "[string|?]",
+    "exports.prototype.weighted.!0": "[string]",
+    "exports.prototype.weighted.!1": "[number]",
+    "exports.prototype.birthday.!0": {
+      "year": "number",
+      "min": "+Date",
+      "!span": "921[0:921]-923[0:923]",
+      "max": "+Date"
+    },
+    "exports.prototype.cpf.!0": {
+      "formatted": "bool",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.cnpj.!0": {
+      "formatted": "bool",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.first.!0": {
+      "gender": "string",
+      "nationality": "string",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.last.!0": {
+      "nationality": "string",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.mrz.!0": {
+      "passportNumber": "number",
+      "dob": "string",
+      "expiry": "string",
+      "gender": "string",
+      "issuer": "string",
+      "nationality": "string",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.name_prefixes.!ret": "[?]",
+    "exports.prototype.name_prefixes.!ret.<i>": {
+      "name": {
+        "!type": "string",
+        "!span": "13233[0:13233]-13237[0:13237]"
+      },
+      "abbreviation": {
+        "!type": "string",
+        "!span": "13247[0:13247]-13259[0:13259]"
+      },
+      "!span": "13232[0:13232]-13267[0:13267]"
+    },
+    "exports.prototype.name_prefix.!0": {
+      "gender": "string",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.ssn.!0": {
+      "ssnFour": "bool",
+      "dashes": "bool",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.aadhar.!0": {
+      "onlyLastFour": "bool",
+      "separatedByWhiteSpace": "bool",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.name_suffixes.!ret": "[?]",
+    "exports.prototype.avatar.!0": {
+      "protocol": {
+        "!type": "string",
+        "!span": "16049[0:16049]-16057[0:16057]"
+      },
+      "fileExtension": {
+        "!type": "string",
+        "!span": "16360[0:16360]-16373[0:16373]"
+      },
+      "size": {
+        "!type": "string",
+        "!span": "16118[0:16118]-16122[0:16122]"
+      },
+      "fallback": {
+        "!type": "string",
+        "!span": "16213[0:16213]-16221[0:16221]"
+      },
+      "rating": {
+        "!type": "string",
+        "!span": "16154[0:16154]-16160[0:16160]"
+      },
+      "!span": "15997[0:15997]-15999[0:15999]",
+      "email": "exports.prototype.avatar.!0"
+    },
+    "exports.prototype.color.!0": {
+      "format": "string",
+      "grayscale": "bool",
+      "casing": "string",
+      "min": "number",
+      "max": "number",
+      "min_alpha": "number",
+      "max_alpha": "number",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.domain.!0": {
+      "protocol": "string",
+      "domain": "string",
+      "domain_prefix": "string",
+      "path": "string",
+      "extensions": "[?]",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.mac.!0": {
+      "delimiter": "string",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.semver.!0": {
+      "include_prerelease": "bool",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.tlds.!ret": "[string]",
+    "exports.prototype.loremPicsum.!0": {
+      "width": "number",
+      "height": "number",
+      "greyscale": "bool",
+      "blurred": "bool",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.areacode.!0": {
+      "parens": "bool",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.latitude.!0": {
+      "min": "number",
+      "max": "number",
+      "fixed": "number",
+      "format": "string",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.longitude.!0": {
+      "min": "number",
+      "max": "number",
+      "fixed": "number",
+      "format": "string",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.phone.!0": {
+      "formatted": "bool",
+      "country": "string",
+      "mobile": "bool",
+      "exampleNumber": "bool",
+      "parens": {
+        "!type": "bool",
+        "!span": "25408[0:25408]-25414[0:25414]"
+      },
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.provinces.!0": {
+      "country": {
+        "!type": "string",
+        "!span": "37084[0:37084]-37091[0:37091]"
+      },
+      "!span": "37083[0:37083]-37097[0:37097]"
+    },
+    "exports.prototype.states.!0": {
+      "country": "string",
+      "us_states_and_dc": "bool",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.states.!ret": "[?]",
+    "exports.prototype.street.!0": {
+      "country": "string",
+      "syllables": "number",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.street_suffixes.!0": {
+      "country": "string",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.date.!0": {
+      "year": "number",
+      "month": "number",
+      "day": "number",
+      "hour": "number",
+      "minute": "number",
+      "second": "number",
+      "millisecond": "number",
+      "american": "bool",
+      "string": "bool",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.hour.!0": {
+      "min": "number",
+      "max": "number",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.second.!0": {
+      "min": "number",
+      "max": "number",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.month.!0": {
+      "min": "number",
+      "max": "number",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.weekday.!0": {
+      "weekday_only": "bool",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.year.!0": {
+      "min": "number",
+      "max": {
+        "!type": "number",
+        "!span": "34555[0:34555]-34558[0:34558]"
+      },
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.dollar.!0": {
+      "max": "number",
+      "min": "number",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.note.!0": {
+      "notes": "string",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.chord_quality.!0": {
+      "jazz": "bool",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.rpg.!ret": "[number]",
+    "exports.prototype.guid.!0": {
+      "version": "number",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.md5.!0": {
+      "raw": "bool",
+      "!span": "41735[0:41735]-41737[0:41737]"
+    },
+    "exports.prototype.mac_address.!0": {
+      "separator": {
+        "!type": "string",
+        "!span": "201401[0:201401]-201410[0:201410]"
+      },
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.normal.!0": {
+      "mean": "number",
+      "dev": "number",
+      "pool": "[?]",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.radio.!0": {
+      "side": "string",
+      "!span": "921[0:921]-923[0:923]"
+    },
+    "exports.prototype.mersenne_twister.!ret": {
+      "N": {
+        "!type": "number",
+        "!span": "203350[0:203350]-203351[0:203351]"
+      },
+      "M": {
+        "!type": "number",
+        "!span": "203361[0:203361]-203362[0:203362]"
+      },
+      "MATRIX_A": {
+        "!type": "number",
+        "!span": "203372[0:203372]-203380[0:203380]"
+      },
+      "UPPER_MASK": {
+        "!type": "number",
+        "!span": "203397[0:203397]-203407[0:203407]"
+      },
+      "LOWER_MASK": {
+        "!type": "number",
+        "!span": "203424[0:203424]-203434[0:203434]"
+      },
+      "mt": {
+        "!type": "[number]",
+        "!span": "203451[0:203451]-203453[0:203453]"
+      },
+      "mti": {
+        "!type": "number",
+        "!span": "203477[0:203477]-203480[0:203480]"
+      }
+    }
+  },
+  "exports": {
+    "prototype": {
+      "VERSION": {
+        "!type": "string",
+        "!span": "1034[0:1034]-1041[0:1041]"
+      },
+      "bool": {
+        "!type": "fn(a: exports.prototype.bool.!0) -> bool",
+        "!span": "1368[0:1368]-1372[0:1372]"
+      },
+      "falsy": {
+        "!type": "fn(a: exports.prototype.falsy.!0) -> ?",
+        "!span": "1546[0:1546]-1551[0:1551]"
+      },
+      "animal": {
+        "!type": "fn(a: ?)",
+        "!span": "1677[0:1677]-1683[0:1683]"
+      },
+      "character": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "2020[0:2020]-2029[0:2029]"
+      },
+      "floating": {
+        "!type": "fn(e: ?) -> number",
+        "!span": "2271[0:2271]-2279[0:2279]"
+      },
+      "integer": {
+        "!type": "fn(e: ?|number) -> number",
+        "!span": "2757[0:2757]-2764[0:2764]"
+      },
+      "natural": {
+        "!type": "fn(e: ?|number) -> number",
+        "!span": "2939[0:2939]-2946[0:2946]"
+      },
+      "prime": {
+        "!type": "fn(a: exports.prototype.prime.!0) -> number",
+        "!span": "3518[0:3518]-3523[0:3523]"
+      },
+      "is_prime": {
+        "!type": "fn(a: number) -> bool",
+        "!span": "3871[0:3871]-3879[0:3879]"
+      },
+      "hex": {
+        "!type": "fn(e: exports.prototype.hex.!0) -> string",
+        "!span": "4049[0:4049]-4052[0:4052]"
+      },
+      "letter": {
+        "!type": "fn(a: ?)",
+        "!span": "4276[0:4276]-4282[0:4282]"
+      },
+      "string": {
+        "!type": "fn(a: ?|number) -> string",
+        "!span": "4438[0:4438]-4444[0:4444]"
+      },
+      "template": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "5161[0:5161]-5169[0:5169]"
+      },
+      "buffer": {
+        "!type": "fn(a: exports.prototype.buffer.!0)",
+        "!span": "5590[0:5590]-5596[0:5596]"
+      },
+      "capitalize": {
+        "!type": "fn(a: string) -> string",
+        "!span": "5898[0:5898]-5908[0:5908]"
+      },
+      "mixin": {
+        "!type": "fn(a: ?)",
+        "!span": "5979[0:5979]-5984[0:5984]"
+      },
+      "unique": {
+        "!type": "fn(a: fn(), e: number, n: exports.prototype.unique.!2) -> [?]",
+        "!span": "6057[0:6057]-6063[0:6063]"
+      },
+      "n": {
+        "!type": "fn(a: ?, e: number) -> [?]",
+        "!span": "6460[0:6460]-6461[0:6461]"
+      },
+      "pad": {
+        "!type": "fn(a: string, e: number, n: string) -> !0",
+        "!span": "6677[0:6677]-6680[0:6680]"
+      },
+      "pick": {
+        "!type": "fn(a: [string]|[?], e: ?) -> !0.<i>",
+        "!span": "6780[0:6780]-6784[0:6784]"
+      },
+      "pickone": {
+        "!type": "fn(a: [string]) -> !0.<i>",
+        "!span": "6971[0:6971]-6978[0:6978]"
+      },
+      "pickset": {
+        "!type": "fn(a: ?, e: ?) -> [?]",
+        "!span": "7130[0:7130]-7137[0:7137]"
+      },
+      "shuffle": {
+        "!type": "fn(a: [string]|[?]) -> [!0.<i>]",
+        "!span": "7503[0:7503]-7510[0:7510]"
+      },
+      "weighted": {
+        "!type": "fn(a: [string], e: [number], n: bool) -> !0.<i>",
+        "!span": "7723[0:7723]-7731[0:7731]"
+      },
+      "paragraph": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "8243[0:8243]-8252[0:8252]"
+      },
+      "sentence": {
+        "!type": "fn(a: ?) -> !0.punctuation",
+        "!span": "8403[0:8403]-8411[0:8411]"
+      },
+      "syllable": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "8616[0:8616]-8624[0:8624]"
+      },
+      "word": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "8931[0:8931]-8935[0:8935]"
+      },
+      "age": {
+        "!type": "fn(a: ?) -> number",
+        "!span": "9273[0:9273]-9276[0:9276]"
+      },
+      "birthday": {
+        "!type": "fn(a: ?) -> string|+Date",
+        "!span": "9533[0:9533]-9541[0:9541]"
+      },
+      "cpf": {
+        "!type": "fn(a: exports.prototype.cpf.!0) -> string",
+        "!span": "9756[0:9756]-9759[0:9759]"
+      },
+      "cnpj": {
+        "!type": "fn(a: exports.prototype.cnpj.!0) -> string",
+        "!span": "10142[0:10142]-10146[0:10146]"
+      },
+      "first": {
+        "!type": "fn(a: exports.prototype.first.!0)",
+        "!span": "10591[0:10591]-10596[0:10596]"
+      },
+      "profession": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "10763[0:10763]-10773[0:10773]"
+      },
+      "company": {
+        "!type": "fn()",
+        "!span": "10942[0:10942]-10949[0:10949]"
+      },
+      "gender": {
+        "!type": "fn(a: ?)",
+        "!span": "11012[0:11012]-11018[0:11018]"
+      },
+      "last": {
+        "!type": "fn(a: exports.prototype.last.!0)",
+        "!span": "11128[0:11128]-11132[0:11132]"
+      },
+      "israelId": {
+        "!type": "fn() -> string",
+        "!span": "11385[0:11385]-11393[0:11393]"
+      },
+      "mrz": {
+        "!type": "fn(a: exports.prototype.mrz.!0) -> string",
+        "!span": "11662[0:11662]-11665[0:11665]"
+      },
+      "name": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "12717[0:12717]-12721[0:12721]"
+      },
+      "name_prefixes": {
+        "!type": "fn(a: string) -> [?]",
+        "!span": "12987[0:12987]-13000[0:13000]"
+      },
+      "prefix": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "13285[0:13285]-13291[0:13291]"
+      },
+      "name_prefix": {
+        "!type": "fn(a: exports.prototype.name_prefix.!0) -> string",
+        "!span": "13344[0:13344]-13355[0:13355]"
+      },
+      "HIDN": {
+        "!type": "fn() -> string",
+        "!span": "13514[0:13514]-13518[0:13518]"
+      },
+      "ssn": {
+        "!type": "fn(a: exports.prototype.ssn.!0) -> string",
+        "!span": "13666[0:13666]-13669[0:13669]"
+      },
+      "aadhar": {
+        "!type": "fn(a: exports.prototype.aadhar.!0) -> string",
+        "!span": "13907[0:13907]-13913[0:13913]"
+      },
+      "name_suffixes": {
+        "!type": "fn() -> [?]",
+        "!span": "14191[0:14191]-14204[0:14204]"
+      },
+      "suffix": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "14879[0:14879]-14885[0:14885]"
+      },
+      "name_suffix": {
+        "!type": "fn(a: ?)",
+        "!span": "14938[0:14938]-14949[0:14949]"
+      },
+      "nationalities": {
+        "!type": "fn()",
+        "!span": "15077[0:15077]-15090[0:15090]"
+      },
+      "nationality": {
+        "!type": "fn()",
+        "!span": "15148[0:15148]-15159[0:15159]"
+      },
+      "android_id": {
+        "!type": "fn() -> string",
+        "!span": "15228[0:15228]-15238[0:15238]"
+      },
+      "apple_token": {
+        "!type": "fn() -> string",
+        "!span": "15374[0:15374]-15385[0:15385]"
+      },
+      "wp8_anid2": {
+        "!type": "fn()",
+        "!span": "15466[0:15466]-15475[0:15475]"
+      },
+      "wp7_anid": {
+        "!type": "fn() -> string",
+        "!span": "15533[0:15533]-15541[0:15541]"
+      },
+      "bb_pin": {
+        "!type": "fn() -> string",
+        "!span": "15682[0:15682]-15688[0:15688]"
+      },
+      "avatar": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "15742[0:15742]-15748[0:15748]"
+      },
+      "color": {
+        "!type": "fn(a: exports.prototype.color.!0) -> string",
+        "!span": "16706[0:16706]-16711[0:16711]"
+      },
+      "domain": {
+        "!type": "fn(a: exports.prototype.domain.!0) -> string",
+        "!span": "18781[0:18781]-18787[0:18787]"
+      },
+      "email": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "18863[0:18863]-18868[0:18868]"
+      },
+      "fbid": {
+        "!type": "fn() -> string",
+        "!span": "18967[0:18967]-18971[0:18971]"
+      },
+      "google_analytics": {
+        "!type": "fn() -> string",
+        "!span": "19053[0:19053]-19069[0:19069]"
+      },
+      "hashtag": {
+        "!type": "fn() -> string",
+        "!span": "19184[0:19184]-19191[0:19191]"
+      },
+      "ip": {
+        "!type": "fn() -> string",
+        "!span": "19238[0:19238]-19240[0:19240]"
+      },
+      "ipv6": {
+        "!type": "fn() -> string",
+        "!span": "19392[0:19392]-19396[0:19396]"
+      },
+      "klout": {
+        "!type": "fn() -> number",
+        "!span": "19469[0:19469]-19474[0:19474]"
+      },
+      "mac": {
+        "!type": "fn(a: exports.prototype.mac.!0) -> string",
+        "!span": "19535[0:19535]-19538[0:19538]"
+      },
+      "semver": {
+        "!type": "fn(a: exports.prototype.semver.!0) -> string",
+        "!span": "19948[0:19948]-19954[0:19954]"
+      },
+      "tlds": {
+        "!type": "fn() -> [string]",
+        "!span": "20213[0:20213]-20217[0:20217]"
+      },
+      "tld": {
+        "!type": "fn() -> string",
+        "!span": "21543[0:21543]-21546[0:21546]"
+      },
+      "twitter": {
+        "!type": "fn() -> string",
+        "!span": "21601[0:21601]-21608[0:21608]"
+      },
+      "url": {
+        "!type": "fn(a: exports.prototype.domain.!0) -> string",
+        "!span": "21655[0:21655]-21658[0:21658]"
+      },
+      "port": {
+        "!type": "fn() -> number",
+        "!span": "21933[0:21933]-21937[0:21937]"
+      },
+      "locale": {
+        "!type": "fn(a: ?)",
+        "!span": "22001[0:22001]-22007[0:22007]"
+      },
+      "locales": {
+        "!type": "fn(a: ?)",
+        "!span": "22133[0:22133]-22140[0:22140]"
+      },
+      "loremPicsum": {
+        "!type": "fn(a: exports.prototype.loremPicsum.!0) -> string",
+        "!span": "22244[0:22244]-22255[0:22255]"
+      },
+      "address": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "22449[0:22449]-22456[0:22456]"
+      },
+      "altitude": {
+        "!type": "fn(a: ?)",
+        "!span": "22545[0:22545]-22553[0:22553]"
+      },
+      "areacode": {
+        "!type": "fn(a: exports.prototype.areacode.!0) -> string",
+        "!span": "22669[0:22669]-22677[0:22677]"
+      },
+      "city": {
+        "!type": "fn() -> string",
+        "!span": "22895[0:22895]-22899[0:22899]"
+      },
+      "coordinates": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "22973[0:22973]-22984[0:22984]"
+      },
+      "countries": {
+        "!type": "fn()",
+        "!span": "23057[0:23057]-23066[0:23066]"
+      },
+      "country": {
+        "!type": "fn(a: ?)",
+        "!span": "23120[0:23120]-23127[0:23127]"
+      },
+      "depth": {
+        "!type": "fn(a: ?)",
+        "!span": "23238[0:23238]-23243[0:23243]"
+      },
+      "geohash": {
+        "!type": "fn(a: ?)",
+        "!span": "23361[0:23361]-23368[0:23368]"
+      },
+      "geojson": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "23490[0:23490]-23497[0:23497]"
+      },
+      "latitude": {
+        "!type": "fn(a: exports.prototype.latitude.!0) -> string",
+        "!span": "23592[0:23592]-23600[0:23600]"
+      },
+      "longitude": {
+        "!type": "fn(a: exports.prototype.longitude.!0) -> string",
+        "!span": "24366[0:24366]-24375[0:24375]"
+      },
+      "phone": {
+        "!type": "fn(a: exports.prototype.phone.!0) -> !0.formatted",
+        "!span": "25158[0:25158]-25163[0:25163]"
+      },
+      "postal": {
+        "!type": "fn() -> string",
+        "!span": "29867[0:29867]-29873[0:29873]"
+      },
+      "postcode": {
+        "!type": "fn() -> string",
+        "!span": "30104[0:30104]-30112[0:30112]"
+      },
+      "counties": {
+        "!type": "fn(a: ?)",
+        "!span": "30381[0:30381]-30389[0:30389]"
+      },
+      "county": {
+        "!type": "fn(a: ?)",
+        "!span": "30490[0:30490]-30496[0:30496]"
+      },
+      "provinces": {
+        "!type": "fn(a: exports.prototype.provinces.!0)",
+        "!span": "30562[0:30562]-30571[0:30571]"
+      },
+      "province": {
+        "!type": "fn(a: ?)",
+        "!span": "30673[0:30673]-30681[0:30681]"
+      },
+      "state": {
+        "!type": "fn(a: ?)",
+        "!span": "30800[0:30800]-30805[0:30805]"
+      },
+      "states": {
+        "!type": "fn(a: exports.prototype.states.!0) -> [?]",
+        "!span": "30918[0:30918]-30924[0:30924]"
+      },
+      "street": {
+        "!type": "fn(a: exports.prototype.street.!0) -> string",
+        "!span": "31382[0:31382]-31388[0:31388]"
+      },
+      "street_suffix": {
+        "!type": "fn(a: exports.prototype.street.!0)",
+        "!span": "31809[0:31809]-31822[0:31822]"
+      },
+      "street_suffixes": {
+        "!type": "fn(a: exports.prototype.street.!0)",
+        "!span": "31912[0:31912]-31927[0:31927]"
+      },
+      "zip": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "32035[0:32035]-32038[0:32038]"
+      },
+      "ampm": {
+        "!type": "fn() -> string",
+        "!span": "32196[0:32196]-32200[0:32200]"
+      },
+      "date": {
+        "!type": "fn(a: ?) -> string|+Date",
+        "!span": "32254[0:32254]-32258[0:32258]"
+      },
+      "hammertime": {
+        "!type": "fn(a: ?) -> number",
+        "!span": "32990[0:32990]-33000[0:33000]"
+      },
+      "hour": {
+        "!type": "fn(a: exports.prototype.hour.!0) -> number",
+        "!span": "33056[0:33056]-33060[0:33060]"
+      },
+      "millisecond": {
+        "!type": "fn() -> number",
+        "!span": "33450[0:33450]-33461[0:33461]"
+      },
+      "second": {
+        "!type": "fn(a: exports.prototype.second.!0) -> number",
+        "!span": "33536[0:33536]-33542[0:33542]"
+      },
+      "month": {
+        "!type": "fn(a: exports.prototype.month.!0)",
+        "!span": "33791[0:33791]-33796[0:33796]"
+      },
+      "months": {
+        "!type": "fn()",
+        "!span": "34076[0:34076]-34082[0:34082]"
+      },
+      "timestamp": {
+        "!type": "fn() -> number",
+        "!span": "34194[0:34194]-34203[0:34203]"
+      },
+      "weekday": {
+        "!type": "fn(a: exports.prototype.weekday.!0) -> string",
+        "!span": "34299[0:34299]-34306[0:34306]"
+      },
+      "year": {
+        "!type": "fn(a: exports.prototype.year.!0) -> string",
+        "!span": "34492[0:34492]-34496[0:34496]"
+      },
+      "cc": {
+        "!type": "fn(a: ?)",
+        "!span": "34630[0:34630]-34632[0:34632]"
+      },
+      "cc_types": {
+        "!type": "fn()",
+        "!span": "34899[0:34899]-34907[0:34907]"
+      },
+      "cc_type": {
+        "!type": "fn(a: ?)",
+        "!span": "34960[0:34960]-34967[0:34967]"
+      },
+      "currency_types": {
+        "!type": "fn()",
+        "!span": "35262[0:35262]-35276[0:35276]"
+      },
+      "currency": {
+        "!type": "fn()",
+        "!span": "35335[0:35335]-35343[0:35343]"
+      },
+      "timezones": {
+        "!type": "fn()",
+        "!span": "35408[0:35408]-35417[0:35417]"
+      },
+      "timezone": {
+        "!type": "fn()",
+        "!span": "35471[0:35471]-35479[0:35479]"
+      },
+      "currency_pair": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "35539[0:35539]-35552[0:35552]"
+      },
+      "dollar": {
+        "!type": "fn(a: exports.prototype.dollar.!0) -> string",
+        "!span": "35739[0:35739]-35745[0:35745]"
+      },
+      "euro": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "35955[0:35955]-35959[0:35959]"
+      },
+      "exp": {
+        "!type": "fn(a: ?) -> ?|string",
+        "!span": "36052[0:36052]-36055[0:36055]"
+      },
+      "exp_month": {
+        "!type": "fn(a: ?)",
+        "!span": "36260[0:36260]-36269[0:36269]"
+      },
+      "exp_year": {
+        "!type": "fn() -> string",
+        "!span": "36464[0:36464]-36472[0:36472]"
+      },
+      "vat": {
+        "!type": "fn(a: ?)",
+        "!span": "36600[0:36600]-36603[0:36603]"
+      },
+      "iban": {
+        "!type": "fn() -> string",
+        "!span": "36706[0:36706]-36710[0:36710]"
+      },
+      "it_vat": {
+        "!type": "fn()",
+        "!span": "36971[0:36971]-36977[0:36977]"
+      },
+      "cf": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "37145[0:37145]-37147[0:37147]"
+      },
+      "pl_pesel": {
+        "!type": "fn()",
+        "!span": "38440[0:38440]-38448[0:38448]"
+      },
+      "pl_nip": {
+        "!type": "fn()",
+        "!span": "38703[0:38703]-38709[0:38709]"
+      },
+      "pl_regon": {
+        "!type": "fn()",
+        "!span": "38960[0:38960]-38968[0:38968]"
+      },
+      "note": {
+        "!type": "fn(a: exports.prototype.note.!0)",
+        "!span": "39204[0:39204]-39208[0:39208]"
+      },
+      "midi_note": {
+        "!type": "fn(a: ?)",
+        "!span": "39531[0:39531]-39540[0:39540]"
+      },
+      "chord_quality": {
+        "!type": "fn(a: exports.prototype.chord_quality.!0) -> string",
+        "!span": "39632[0:39632]-39645[0:39645]"
+      },
+      "chord": {
+        "!type": "fn(a: ?)",
+        "!span": "39790[0:39790]-39795[0:39795]"
+      },
+      "tempo": {
+        "!type": "fn(a: ?)",
+        "!span": "39870[0:39870]-39875[0:39875]"
+      },
+      "coin": {
+        "!type": "fn() -> string",
+        "!span": "39968[0:39968]-39972[0:39972]"
+      },
+      "d4": {
+        "!type": "fn() -> number",
+        "!span": "40032[0:40032]-40034[0:40034]"
+      },
+      "rpg": {
+        "!type": "fn(a: string, e: ?) -> [number]",
+        "!span": "40300[0:40300]-40303[0:40303]"
+      },
+      "guid": {
+        "!type": "fn(a: exports.prototype.guid.!0) -> string",
+        "!span": "40792[0:40792]-40796[0:40796]"
+      },
+      "hash": {
+        "!type": "fn(a: number|?)",
+        "!span": "41091[0:41091]-41095[0:41095]"
+      },
+      "luhn_check": {
+        "!type": "fn(a: ?) -> bool",
+        "!span": "41243[0:41243]-41253[0:41253]"
+      },
+      "luhn_calculate": {
+        "!type": "fn(a: number) -> number",
+        "!span": "41379[0:41379]-41393[0:41393]"
+      },
+      "md5": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "41543[0:41543]-41546[0:41546]"
+      },
+      "file": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "41877[0:41877]-41881[0:41881]"
+      },
+      "get": {
+        "!type": "fn(a: string)",
+        "!span": "201310[0:201310]-201313[0:201313]"
+      },
+      "mac_address": {
+        "!type": "fn(a: exports.prototype.mac_address.!0) -> string",
+        "!span": "201354[0:201354]-201365[0:201365]"
+      },
+      "normal": {
+        "!type": "fn(a: exports.prototype.normal.!0) -> number",
+        "!span": "201615[0:201615]-201621[0:201621]"
+      },
+      "normal_pool": {
+        "!type": "fn(a: exports.prototype.normal.!0) -> !0.pool.<i>",
+        "!span": "202081[0:202081]-202092[0:202092]"
+      },
+      "radio": {
+        "!type": "fn(a: exports.prototype.radio.!0) -> string",
+        "!span": "202356[0:202356]-202361[0:202361]"
+      },
+      "set": {
+        "!type": "fn(a: ?, e: ?)",
+        "!span": "202678[0:202678]-202681[0:202681]"
+      },
+      "tv": {
+        "!type": "fn(a: ?) -> string",
+        "!span": "202744[0:202744]-202746[0:202746]"
+      },
+      "emotion": {
+        "!type": "fn()",
+        "!span": "203103[0:203103]-203110[0:203110]"
+      },
+      "mersenne_twister": {
+        "!type": "fn(a: number) -> exports.mt",
+        "!span": "203174[0:203174]-203190[0:203190]"
+      },
+      "blueimp_md5": {
+        "!type": "fn() -> exports.bimd5",
+        "!span": "203232[0:203232]-203243[0:203243]"
+      },
+      "minute": "exports.prototype.second",
+      "d6": "exports.prototype.d4",
+      "d8": "exports.prototype.d4",
+      "d10": "exports.prototype.d4",
+      "d12": "exports.prototype.d4",
+      "d20": "exports.prototype.d4",
+      "d30": "exports.prototype.d4",
+      "d100": "exports.prototype.d4"
+    },
+    "!type": "fn(a: ?) -> !this",
+    "!span": "210626[0:210626]-210633[0:210633]",
+    "random": {
+      "!type": "fn() -> number",
+      "!span": "413[0:413]-419[0:419]"
+    },
+    "seed": {
+      "!type": "number",
+      "!span": "451[0:451]-455[0:455]"
+    },
+    "mt": {
+      "!span": "769[0:769]-771[0:771]"
+    },
+    "bimd5": {
+      "!span": "810[0:810]-815[0:815]"
+    }
+  },
+  "chance": {
+    "!type": "+exports",
+    "!span": "210779[0:210779]-210785[0:210785]"
+  }
+}

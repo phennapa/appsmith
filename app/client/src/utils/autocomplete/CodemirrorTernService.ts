@@ -7,6 +7,7 @@ import base64 from "constants/defs/base64-js.json";
 import moment from "constants/defs/moment.json";
 import xmlJs from "constants/defs/xmlParser.json";
 import forge from "constants/defs/forge.json";
+import chance from "constants/defs/chance.json";
 import browser from "constants/defs/browser.json";
 import type { Hint } from "codemirror";
 import CodeMirror, { Pos, cmpPos } from "codemirror";
@@ -27,6 +28,7 @@ import TernWorkerServer from "./TernWorkerService";
 const DEFS: Def[] = [
   // @ts-expect-error: Types are not available
   ecma,
+  chance,
   browser,
   GLOBAL_FUNCTIONS,
   GLOBAL_DEFS,

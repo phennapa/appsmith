@@ -2,6 +2,7 @@ import _, { VERSION as lodashVersion } from "lodash";
 import moment from "moment-timezone";
 import parser from "fast-xml-parser";
 import forge from "node-forge";
+import Chance from "chance";
 
 export type TJSLibrary = {
   version?: string;
@@ -41,6 +42,15 @@ export const defaultLibraries: TJSLibrary[] = [
     version: "1.3.0",
     docsURL: "https://github.com/digitalbazaar/forge",
     name: "forge",
+  },
+  {
+    accessor: ["chance"],
+    // We are removing some functionalities of node-forge because they wont
+    // work in the worker thread
+    lib: new Chance(),
+    version: "^1.1.11",
+    docsURL: "https://chancejs.com/",
+    name: "chance",
   },
 ];
 
